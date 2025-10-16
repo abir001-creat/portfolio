@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #222;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 15px 0;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00adb5;
+}
+
+#modeBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  width: 90%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(135deg, #00adb5, #007a85);
+  color: white;
+  padding: 100px 20px;
+  border-radius: 10px;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: white;
+  color: #007a85;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #007a85;
+  color: white;
+}
+
+/* ===== PROJECTS ===== */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project {
+  background-color: #eee;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  background-color: #00adb520;
+}
+
+/* ===== CONTACT ===== */
+.btn {
+  background-color: #00adb5;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #007a85;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+  border-top: 3px solid #00adb5;
+}
+
+/* ===== MODE SOMBRE ===== */
+.dark-mode {
+  background-color: #121212;
+  color: #f9f9f9;
+}
+
+.dark-mode header {
+  background-color: #000;
+}
+
+.dark-mode footer {
+  background-color: #000;
+}
+
+.dark-mode .project {
+  background-color: #1e1e1e;
+}
